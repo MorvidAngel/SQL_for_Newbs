@@ -11,3 +11,7 @@
 -- new 2022
 -- Which rating is most prevalent in each price 
 -- (use only 1 query)?
+select count(price), price
+from nicer_but_slower_film_list
+group by price
+;
